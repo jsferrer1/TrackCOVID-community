@@ -121,9 +121,10 @@ class Checkpoints extends React.Component {
             delay={300}
             onError={this.handleScanError.bind(this)}
             onScan={this.handleScan.bind(this)}
-            style={{ width: legacyMode ? 0 : '100%' }}
-            facingMode='environment'
-            legacyMode={legacyMode}
+            style={{ width: '100%' }}
+            // style={{ width: legacyMode ? 0 : '100%' }}
+            // facingMode='environment'
+            // legacyMode={legacyMode}
           />
           { legacyMode && (
             <Typography style={{ marginTop: 25 }}>
